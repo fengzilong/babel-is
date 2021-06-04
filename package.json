@@ -1,0 +1,29 @@
+{
+  "name": "babel-is",
+  "version": "0.1.0",
+  "main": "index.js",
+  "keywords": [ "babel", "babel plugin", "type", "is" ],
+  "description": "matches ast node in babel plugin",
+  "scripts": {
+    "test": "ava"
+  },
+  "dependencies": {
+    "@babel/types": "^7.14.4",
+    "esquery": "^1.4.0",
+    "quick-lru": "^5.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "ava": "^3.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengzilong/babel-is.git"
+  },
+  "author": "fengzilong",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fengzilong/babel-is/issues"
+  },
+  "homepage": "https://github.com/fengzilong/babel-is#readme"
+}
