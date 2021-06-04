@@ -2,8 +2,8 @@
   "name": "babel-is",
   "version": "0.1.0",
   "main": "index.js",
-  "keywords": [ "babel", "babel plugin", "type", "is" ],
-  "description": "matches ast node in babel plugin",
+  "keywords": [ "babel", "babel plugin", "type", "is", "verify" ],
+  "description": "verify ast node in babel plugin",
   "scripts": {
     "test": "ava"
   },
