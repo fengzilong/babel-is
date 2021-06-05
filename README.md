@@ -21,26 +21,24 @@ In your babel plugin
 ```js
 const is = require( 'babel-is' )
 
+const selector = `FunctionDeclaration[id.name=foo] [kind=let]`
+
 module.exports = function () {
   return {
     visitor: {
       VariableDeclaration( path ) {
-        if (
-          !is(
-            path,
-            `FunctionDeclaration[id.name=foo] VariableDeclaration[kind=let]`
-          )
-        ) {
-          return
+        if ( is( path, selector ) ) {
+          // matches all `let` variable declarations in `foo` function
+          // add your logic
+          // ...
         }
-        
-        // add your logic
-        // ...
       }
     }
   }
 }
 ```
+
+
 
 ### License
 
