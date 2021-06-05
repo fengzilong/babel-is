@@ -24,11 +24,11 @@ const is = require( 'babel-is' )
 module.exports = function () {
   return {
     visitor: {
+      // matches all `let` variable declarations in `foo` function
       VariableDeclaration( path ) {
         const selector = `FunctionDeclaration[id.name=foo] [kind=let]`
 
         if ( is( path, selector ) ) {
-          // matches all `let` variable declarations in `foo` function
           // add your logic
           // ...
         }
